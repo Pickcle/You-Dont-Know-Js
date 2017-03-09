@@ -14,6 +14,8 @@ A.prototype.sayB = function() {
 let a = new A(1);
 let b = new A(2);
 
+a instanceof A;//true
+
 a.sayA();//1
 b.sayA();//2
 a.sayB();//3
