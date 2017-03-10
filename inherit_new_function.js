@@ -1,3 +1,4 @@
+//类实例化
 function A(a) {
   this.a = a;
   this.b = 3;
