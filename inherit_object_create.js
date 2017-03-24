@@ -8,7 +8,7 @@ let o = {
 };
 
 //Object.create的polyfill
-let create(obj) {
+function create(obj) {
   function O(){};
   O.prototype = obj;
   return new O();
