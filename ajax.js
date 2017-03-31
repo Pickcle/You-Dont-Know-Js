@@ -1,8 +1,8 @@
 var xhr = new XMLHttpRequest();
 xhr.open('get', 'www.baidu.com', true);
-xhr.onload = function(response) {
-  if (response.status >= 200 && response < 300 || response == 304) {
-    console.log(response);
+xhr.onload = function() {
+  if (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304) {
+    console.log(xhr.response || xhr.responseXML);
   } else {
     console.log('error');
   }
